@@ -12,6 +12,7 @@ az group create --name keyvault-demo --location eastus
 
 ```
 az aks create --name keyvault-demo-cluster -g keyvault-demo --node-count 1 --enable-addons azure-keyvault-secrets-provider --enable-oidc-issuer --enable-workload-identity
+az aks create --name keyvault-demo-cluster -g keyvault-demo --node-count 1 --enable-addons azure-keyvault-secrets-provider --enable-oidc-issuer --enable-workload-identity --generate-ssh-keys
 ```
 
 ### Get the Kubernetes cluster credentials (Update kubeconfig)
